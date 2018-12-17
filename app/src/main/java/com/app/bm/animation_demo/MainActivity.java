@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.app.bm.animation_demo.activity.Animation1Activity;
 import com.app.bm.animation_demo.activity.AnimationObjectActivity;
 import com.app.bm.animation_demo.activity.AnimationOfObecjtActivity;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.animation_1).setOnClickListener(onClickListener);
         findViewById(R.id.animation_object).setOnClickListener(onClickListener);
+        findViewById(R.id.animation1).setOnClickListener(onClickListener);
         /*
         ValueAnimator valueAnimator = ValueAnimator.ofInt(button.getLayoutParams().width,500);
 
@@ -74,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.animation_object:
                     Intent intent1 = new Intent(MainActivity.this,AnimationObjectActivity.class);
                     startActivity(intent1);
+                    break;
+                case R.id.animation1:
+                    Intent intent2 = new Intent(MainActivity.this,Animation1Activity.class);
+                    startActivity(intent2);
                     break;
             }
         }

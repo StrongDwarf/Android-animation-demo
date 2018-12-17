@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".activity.AnimationOfObecjtActivity"></activity>
         <activity android:name=".activity.AnimationObjectActivity"></activity>
+        <activity android:name=".activity.Animation1Activity"></activity>
     </application>
 
 </manifest>

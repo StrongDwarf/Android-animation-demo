@@ -1,6 +1,7 @@
 package com.app.bm.animation_demo.entiy;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
@@ -34,5 +35,13 @@ public class MyView2 extends View {
         //初始化画笔
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setColor(Color.BLUE);
+    }
+
+    //复写onDraw()从而实现绘制逻辑
+    //绘制逻辑:先在初始点画圆，通过监听当前坐标值当前坐标值(currentPoint)的变化，每次变化都调用onDraw()重新绘制圆
+    //从而实现圆的平移动画效果
+    @Override
+    protected void onDraw(Canvas canvas){
+        canvas.drawCircle(500,500,RADIUS,mPaint);
     }
 }
