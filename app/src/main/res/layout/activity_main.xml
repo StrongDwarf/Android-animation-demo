@@ -33,6 +33,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="自定义对象属性来实现动画"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animation2"
+            android:text="使用装饰器实现动画"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/animation3"
+            android:text="组合动画" />
     </LinearLayout>
     <com.app.bm.animation_demo.entiy.MyView
         android:layout_width="match_parent"

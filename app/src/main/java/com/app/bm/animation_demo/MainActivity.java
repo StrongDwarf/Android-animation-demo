@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.app.bm.animation_demo.activity.Animation1Activity;
+import com.app.bm.animation_demo.activity.Animation2Activity;
 import com.app.bm.animation_demo.activity.AnimationObjectActivity;
 import com.app.bm.animation_demo.activity.AnimationOfObecjtActivity;
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.animation_1).setOnClickListener(onClickListener);
         findViewById(R.id.animation_object).setOnClickListener(onClickListener);
         findViewById(R.id.animation1).setOnClickListener(onClickListener);
+        findViewById(R.id.animation2).setOnClickListener(onClickListener);
         /*
         ValueAnimator valueAnimator = ValueAnimator.ofInt(button.getLayoutParams().width,500);
 
@@ -80,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.animation1:
                     Intent intent2 = new Intent(MainActivity.this,Animation1Activity.class);
                     startActivity(intent2);
+                    break;
+                case R.id.animation2:
+                    Intent intent3 = new Intent(MainActivity.this,Animation2Activity.class);
+                    startActivity(intent3);
                     break;
             }
         }

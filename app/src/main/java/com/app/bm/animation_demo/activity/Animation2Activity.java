@@ -27,13 +27,12 @@ public class Animation2Activity extends AppCompatActivity implements  View.OnCli
         wrapper = new ViewWrapper(mButton);
         //创建包装类,并传入动画作用的对象
 
+        mButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-
-        }
+        ObjectAnimator.ofInt(wrapper,"width",500).setDuration(3000).start();
     }
 
     //提供ViewWrapper类,用于包装View对象
