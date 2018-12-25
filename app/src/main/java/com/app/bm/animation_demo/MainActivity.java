@@ -13,6 +13,8 @@ import com.app.bm.animation_demo.activity.Animation1Activity;
 import com.app.bm.animation_demo.activity.Animation2Activity;
 import com.app.bm.animation_demo.activity.AnimationObjectActivity;
 import com.app.bm.animation_demo.activity.AnimationOfObecjtActivity;
+import com.app.bm.animation_demo.activity.AnimationSetActivity;
+import com.app.bm.animation_demo.activity.InterpolatorActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.animation_object).setOnClickListener(onClickListener);
         findViewById(R.id.animation1).setOnClickListener(onClickListener);
         findViewById(R.id.animation2).setOnClickListener(onClickListener);
+        findViewById(R.id.animation3).setOnClickListener(onClickListener);
+        findViewById(R.id.interpolator).setOnClickListener(onClickListener);
         /*
         ValueAnimator valueAnimator = ValueAnimator.ofInt(button.getLayoutParams().width,500);
 
@@ -86,6 +90,14 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.animation2:
                     Intent intent3 = new Intent(MainActivity.this,Animation2Activity.class);
                     startActivity(intent3);
+                    break;
+                case R.id.animation3:
+                    Intent intent4 = new Intent(MainActivity.this,AnimationSetActivity.class);
+                    startActivity(intent4);
+                    break;
+                case R.id.interpolator:
+                    Intent intent5 = new Intent(MainActivity.this,InterpolatorActivity.class);
+                    startActivity(intent5);
                     break;
             }
         }

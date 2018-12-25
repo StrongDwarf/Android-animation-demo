@@ -20,6 +20,8 @@
         <activity android:name=".activity.AnimationObjectActivity"></activity>
         <activity android:name=".activity.Animation1Activity"></activity>
         <activity android:name=".activity.Animation2Activity"></activity>
+        <activity android:name=".activity.AnimationSetActivity"></activity>
+        <activity android:name=".activity.InterpolatorActivity"></activity>
     </application>
 
 </manifest>
